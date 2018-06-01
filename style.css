@@ -7,15 +7,50 @@
 .music-player {
      display: flex;
      flex-direction: column;
-     justify-content: space-around;
+     justify-content: space-between;
      width: 60%;
      height: 100%;
      background-color: red;
 }
 
+.play-bar {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     height: 10%;
+     background-color: green;
+}
+
+#pause-play {
+     height: 40px;
+     size:24px;
+     color: black;
+     width: 40px;
+     border-radius: 20px;
+}
+
 .now-playing-text-box {
      background: rgba(0, 0, 0, 0.0);
      height: 5%;
+}
+
+#now-playing-label {
+     text-align: center;
+     color: white;
+     size: 18px;
+     font-family: sans-serif;
+}
+
+.song-artwork {
+     display:flex;
+     justify-content: center;
+     width: 100%;
+}
+
+#active-song-art-file {
+     height: 300px;
+     width: 300px;
 }
 
 .playlist {
@@ -43,13 +78,6 @@
 .active-song {
      background-color: crimson;
      height: 6%;
-}
-
-#now-playing-label {
-     text-align: center;
-     color: white;
-     size: 18px;
-     font-family: sans-serif;
 }
 
 #playlist-name {
