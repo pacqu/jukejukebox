@@ -8,20 +8,25 @@ Updates:
 * begins playing
 
 */
-function changeSong(songOrder){
-  document.getElementById('active-song-artist').innerHTML = songOrder.songArtist;
-  document.getElementById('active-song-album').innerHTML = songOrder.songAlbum;
-  document.getElementById('active-song-artwork').innerHTML = songOrder.songArtFile;
-  document.getElementById('active-song-title').innerHTML = songOrder.songTitle;
+
+var jukebox = new Jukebox();
+function changeSong(songIndex){
+  document.getElementById('active-song-artist').innerHTML = jukebox.getSong(songIndex).songArtist;
+  document.getElementById('active-song-album').innerHTML = jukebox.getSong(songIndex).songAlbum;
+  document.getElementById('active-song-artwork').innerHTML = jukebox.getSong(songIndex).songArtFile;
+  document.getElementById('active-song-title').innerHTML = jukebox.getSong(songIndex).songTitle;
+  var song = document.createAttribute("src");
+  song.value = jukebox.getSong(songIndex).songSrc;
+  document.getElementById('songID').setAttribute(song);
   play_song();
 }
 
 function play_song(){
-  document.getElementById('play-button').innerHTML = pause.png
+  document.getElementById('pause-play').innerHTML = pause.png;
   document.getElementById('songID').play();
 }
 
 function pause_song(){
-  document.getElementById('play-button').innerHTML = play.jpg
+  document.getElementById('pause-play').innerHTML = play.jpg;
   document.getElementById('songID').pause();
 }
