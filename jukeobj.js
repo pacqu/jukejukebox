@@ -29,7 +29,7 @@ function generateSongHTML(song, order){
   var songHTML = document.createElement("DIV");
   //songHTML.appendChild(document.createTextNode(song.songTitle + " - " + song.songArtist + " - " + song.songAlbum));
   songHTML.innerHTML
-  = "<img src='" + song.songArtFile +"' style='height:100%;'></img>" + song.songTitle + " - " + song.songArtist + " - " + song.songAlbum ;
+  = "<img class='mini-artwork' src='" + song.songArtFile +"' style='height:100%;'></img>" + song.songTitle + " - " + song.songArtist + " - " + song.songAlbum ;
   var clss = document.createAttribute("class");
   clss.value = "song";
   var onclick = document.createAttribute("onclick");

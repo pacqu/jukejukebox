@@ -28,12 +28,18 @@ function changeSong(songIndex){
 }
 
 function play_song(){
-  //document.getElementById('pause-play').innerHTML = pause.png;
+  document.getElementById('pause-play').innerHTML = '<i class="fa fa-pause">';
+  var onclick = document.createAttribute("onclick");
+  onclick.value = "pause_song()";
+  document.getElementById('pause-play').setAttributeNode(onclick);
   document.getElementById('songID').play();
 }
 
 function pause_song(){
-  document.getElementById('pause-play').innerHTML = play.jpg;
+  document.getElementById('pause-play').innerHTML = '<i class="fa fa-play">';
+  var onclick = document.createAttribute("onclick");
+  onclick.value = "play_song()";
+  document.getElementById('pause-play').setAttributeNode(onclick);
   document.getElementById('songID').pause();
 }
 
