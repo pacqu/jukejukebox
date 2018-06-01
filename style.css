@@ -130,11 +130,14 @@
 .active-song {
      display: flex;
      flex-direction: row;
+     justify-content: space-between;
      align-items: center;
      background-color: crimson;
      height: 7%;
      order: -1;
      font-family: sans-serif;
+     color: darkgrey;
+     padding-right: 25px;
 }
 
 #playlist-name {
