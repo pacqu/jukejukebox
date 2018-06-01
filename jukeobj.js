@@ -41,6 +41,10 @@ function generateSongHTML(song, order){
   return songHTML;
 }
 
+function makeActiveSong(song,order){
+    var songHTML = document.querySelector
+}
+
 var song1 = new Song("spotify","Waves","Kanye","TLOP","4:20","blessed");
 var song2 = new Song("applemusic","Good Morning","Kanye","Graduation","3:10","messed");
 
