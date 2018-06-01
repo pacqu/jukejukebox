@@ -6,14 +6,55 @@
 
 .music-player {
      display: flex;
+     flex-direction: column;
+     justify-content: space-around;
      width: 60%;
      height: 100%;
      background-color: red;
 }
 
+.now-playing-text-box {
+     background: rgba(0, 0, 0, 0.0);
+     height: 5%;
+}
+
 .playlist {
      display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
      width: 40%;
      height: 100%;
      background-color: blue;
+}
+
+.playlist-title-bar {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background-color: navy;
+     height: 8%;
+}
+
+.song {
+     background-color: coral;
+     height: 6%;
+}
+
+.active-song {
+     background-color: crimson;
+     height: 6%;
+}
+
+#now-playing-label {
+     text-align: center;
+     color: white;
+     size: 18px;
+     font-family: sans-serif;
+}
+
+#playlist-name {
+     text-align: center;
+     color: white;
+     size: 18px;
+     font-family: sans-serif;
 }
