@@ -15,9 +15,11 @@ function Jukebox(){
     //Function that adds HTML of all songs to the playlist
   }
   this.addSong = function(song){
-    var order =
+    var order = this.Songs.length;
     this.Songs.push(song);
     //Function that adds HTML of song to playlist
+    var songDiv = generateSongHTML(song,order);
+    document.querySelector(".playlist").appendChild(songDiv);
   }
 
   this.getSong = function(order){
