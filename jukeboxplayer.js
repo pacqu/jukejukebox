@@ -58,7 +58,7 @@ function pause_song(){
 }
 
 var jukebox = new Jukebox();
-var song1 = new Song("change.mp3","Changes","A$AP Rocky","Testing","4:20","asap-rocky-testing.jpg");
+var song1 = new Song("change.mp3","Changes","A$AP Rocky","Testing","4:20","images/asap-rocky-testing.jpg");
 var song2 = new Song("boredom.mp3","Bordeom","Tyler, The Creator","Flower Boy","4:20","images/flowerboy.png");
 var song3 = new Song("chanel.mp3","Chanel","Frank Ocean","Chanel","4:20","images/chanel.jpg");
 jukebox.addSong(song1);
