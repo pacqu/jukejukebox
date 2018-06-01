@@ -9,7 +9,7 @@
      justify-content: center;
      width: 60%;
      height: 100%;
-     background-color: lightcyan;
+     background-color: lightskyblue;
 }
 
 .song-info {
@@ -91,7 +91,8 @@
      justify-content: flex-start;
      width: 40%;
      height: 100%;
-     background-color: royalblue;
+     background: linear-gradient(to right, royalblue , dodgerblue);
+     overflow: scroll;
 }
 
 .playlist-title-bar {
@@ -104,8 +105,9 @@
 }
 
 .song {
-     background-color: coral;
+     background-color: mediumorchid;
      height: 7%;
+     font-family: sans-serif;
 }
 
 .active-song {
