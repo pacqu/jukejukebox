@@ -21,13 +21,31 @@ function Jukebox(){
   }
 
   this.getSong = function(order){
-    retunr this.Songs(order);
+    return this.Songs(order);
   }
 }
+
+
+function generateSongHTML(song, order){
+  var songHTML = document.createElement("DIV");
+  songHTML.appendChild(document.createTextNode(song.songTitle + " - " + song.songArtist + " - " + song.songAlbum));
+  var clss = document.createAttribute("class");
+  clss.value = "song";
+  var onclick = document.createAttribute("onclick");
+  onclick.value = "changeSong(" + order + ")";
+  var style = document.createAttribute("style")
+  style.value = "order:" + order + ";";
+  songHTML.setAttributeNode(clss);
+  songHTML.setAttributeNode(onclick);
+  songHTML.setAttributeNode(style);
+  return songHTML;
+}
+
 var song1 = new Song("spotify","Waves","Kanye","TLOP","4:20","blessed");
 var song2 = new Song("applemusic","Good Morning","Kanye","Graduation","3:10","messed");
-/*
-function generateSongHTML(song, order){
 
-}
-*/
+var testEl = generateSongHTML(song1,0);
+var testEl1 = generateSongHTML(song2,1);
+console.log(testEl);
+document.querySelector(".playlist").appendChild(testEl);
+document.querySelector(".playlist").appendChild(testEl1);
