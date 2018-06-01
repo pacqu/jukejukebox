@@ -9,7 +9,7 @@
      justify-content: center;
      width: 60%;
      height: 100%;
-     background-color: red;
+     background-color: lightskyblue;
 }
 
 .song-info {
@@ -19,23 +19,30 @@
      text-align: center;
 }
 
+.artist-album-joint {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
 #active-song-title {
      text-align: center;
-     color: white;
+     font-weight: bold;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
 
 #active-song-artist {
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
 
 #active-song-album{
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
@@ -46,7 +53,7 @@
      justify-content: center;
      align-items: center;
      height: 10%;
-     background-color: green;
+     background-color: lightskyblue;
 }
 
 .play-bar-button {
@@ -69,7 +76,7 @@
 
 #now-playing-label {
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
@@ -91,7 +98,8 @@
      justify-content: flex-start;
      width: 40%;
      height: 100%;
-     background-color: blue;
+     background: linear-gradient(to right, royalblue , dodgerblue);
+     overflow: scroll;
 }
 
 .playlist-title-bar {
@@ -104,14 +112,29 @@
 }
 
 .song {
-     background-color: coral;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-color: darkslateblue;
      height: 7%;
+     font-family: sans-serif;
+     font-weight: 150;
+     text-align: center;
+     color: white;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     padding-right: 25px;
 }
 
 .active-song {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
      background-color: crimson;
      height: 7%;
      order: -1;
+     font-family: sans-serif;
 }
 
 #playlist-name {
