@@ -13,8 +13,7 @@ function changeSong(songOrder){
   document.getElementById('active-song-album').innerHTML = songOrder.songAlbum;
   document.getElementById('active-song-artwork').innerHTML = songOrder.songArtFile;
   document.getElementById('active-song-title').innerHTML = songOrder.songTitle;
-  // play_song();
-  //call play song
+  play_song();
 }
 
 function play_song(){
