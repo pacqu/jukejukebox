@@ -19,6 +19,12 @@
      text-align: center;
 }
 
+.artist-album-joint {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
 #active-song-title {
      text-align: center;
      font-weight: bold;
@@ -106,16 +112,29 @@
 }
 
 .song {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
      background-color: darkslateblue;
      height: 7%;
      font-family: sans-serif;
+     font-weight: 150;
+     text-align: center;
+     color: white;
+     border-top: 1px solid black;
      border-bottom: 1px solid black;
+     padding-right: 25px;
 }
 
 .active-song {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
      background-color: crimson;
      height: 7%;
      order: -1;
+     font-family: sans-serif;
 }
 
 #playlist-name {
