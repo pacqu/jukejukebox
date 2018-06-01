@@ -21,14 +21,15 @@ function Jukebox(){
   }
 
   this.getSong = function(order){
-    return this.Songs(order);
+    return this.Songs[order];
   }
 }
 
-
 function generateSongHTML(song, order){
   var songHTML = document.createElement("DIV");
-  songHTML.appendChild(document.createTextNode(song.songTitle + " - " + song.songArtist + " - " + song.songAlbum));
+  //songHTML.appendChild(document.createTextNode(song.songTitle + " - " + song.songArtist + " - " + song.songAlbum));
+  songHTML.innerHTML
+  = "<img src='" + song.songArtFile +"' style='height:100%;'></img>" + song.songTitle + " - " + song.songArtist + " - " + song.songAlbum ;
   var clss = document.createAttribute("class");
   clss.value = "song";
   var onclick = document.createAttribute("onclick");
@@ -40,16 +41,3 @@ function generateSongHTML(song, order){
   songHTML.setAttributeNode(style);
   return songHTML;
 }
-
-function makeActiveSong(song,order){
-    var songHTML = document.querySelector
-}
-
-var song1 = new Song("spotify","Waves","Kanye","TLOP","4:20","blessed");
-var song2 = new Song("applemusic","Good Morning","Kanye","Graduation","3:10","messed");
-
-var testEl = generateSongHTML(song1,0);
-var testEl1 = generateSongHTML(song2,1);
-console.log(testEl);
-document.querySelector(".playlist").appendChild(testEl);
-document.querySelector(".playlist").appendChild(testEl1);
