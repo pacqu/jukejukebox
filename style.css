@@ -21,21 +21,22 @@
 
 #active-song-title {
      text-align: center;
-     color: white;
+     font-weight: bold;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
 
 #active-song-artist {
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
 
 #active-song-album{
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
@@ -69,7 +70,7 @@
 
 #now-playing-label {
      text-align: center;
-     color: white;
+     color: navy;
      size: 18px;
      font-family: sans-serif;
 }
@@ -105,9 +106,10 @@
 }
 
 .song {
-     background-color: mediumorchid;
+     background-color: darkslateblue;
      height: 7%;
      font-family: sans-serif;
+     border-bottom: 1px solid black;
 }
 
 .active-song {
