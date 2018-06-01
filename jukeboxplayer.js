@@ -58,9 +58,15 @@ function pause_song(){
 }
 
 var jukebox = new Jukebox();
-var song1 = new Song("change.mp3","Changes","A$AP Rocky","Testing","4:20","asap-rocky-testing.jpg");
+var song1 = new Song("change.mp3","Changes","A$AP Rocky","Testing","4:20","images/asap-rocky-testing.jpg");
 var song2 = new Song("boredom.mp3","Bordeom","Tyler, The Creator","Flower Boy","4:20","images/flowerboy.png");
 var song3 = new Song("chanel.mp3","Chanel","Frank Ocean","Chanel","4:20","images/chanel.jpg");
+var song4 = new Song("but-a-dream.mp3","But A Dream","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
+var song5 = new Song("perry-aye.mp3","Perry Aye","A$AP Mob","Cozy Tapes Vol. 2", "4:20", "images/asap-mob-cozy2.jpg");
+var song6 = new Song("no-less.mp3","No Less","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
 jukebox.addSong(song1);
 jukebox.addSong(song2);
 jukebox.addSong(song3);
+jukebox.addSong(song4);
+jukebox.addSong(song5);
+jukebox.addSong(song6);

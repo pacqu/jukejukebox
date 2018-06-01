@@ -9,7 +9,7 @@
      justify-content: center;
      width: 60%;
      height: 100%;
-     background-color: lightskyblue;
+     background: linear-gradient(lightskyblue , midnightblue);
 }
 
 .song-info {
@@ -53,7 +53,6 @@
      justify-content: center;
      align-items: center;
      height: 10%;
-     background-color: lightskyblue;
 }
 
 .play-bar-button {
@@ -98,7 +97,7 @@
      justify-content: flex-start;
      width: 40%;
      height: 100%;
-     background: linear-gradient(to right, royalblue , dodgerblue);
+     background: linear-gradient(lightskyblue , midnightblue);
      overflow: scroll;
 }
 
@@ -117,7 +116,7 @@
      justify-content: space-between;
      align-items: center;
      background-color: darkslateblue;
-     height: 63px;
+     height: 7%;
      font-family: sans-serif;
      font-weight: 150;
      text-align: center;
