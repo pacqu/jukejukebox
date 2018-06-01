@@ -1,0 +1,19 @@
+.main-content {
+     display:flex;
+     width: 100%;
+
+}
+
+.music-player {
+     display: flex;
+     width: 60%;
+     height: 100%;
+     background-color: red;
+}
+
+.playlist {
+     display: flex;
+     width: 40%;
+     height: 100%;
+     background-color: blue;
+}
