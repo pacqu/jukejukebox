@@ -91,13 +91,23 @@
      width: 300px;
 }
 
+.playlist-container {
+     display: flex;
+     align-content:flex-start;
+     flex-direction: row;
+     justify-content: flex-start;
+     flex-wrap:wrap;
+     height: 100%;
+     width: 40%;
+}
+
 .playlist {
      display: flex;
      align-content:flex-start;
      flex-direction: row;
      justify-content: flex-start;
      flex-wrap:wrap;
-     width: 40%;
+     width: 100%;
      height: 100%;
      background: linear-gradient(lightskyblue , midnightblue);
      overflow: scroll;
@@ -107,32 +117,29 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
-     order: -2;
      background-color: navy;
      height: 8%;
      width:100%;
 }
 
 .song {
-  width:100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: darkslateblue;
-  height: 7%;
-  font-family: sans-serif;
-  font-weight: 150;
-  text-align: center;
-  color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-right: 25px;
-  width:100%
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-color: darkslateblue;
+     height: 7%;
+     font-family: sans-serif;
+     font-weight: 150;
+     text-align: center;
+     color: white;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     padding-right: 25px;
+     width:100%
 }
 
 .active-song {
-  width:100%;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -143,6 +150,7 @@
      font-family: sans-serif;
      color: darkgrey;
      padding-right: 25px;
+     width: 100%;
 }
 
 #playlist-name {
