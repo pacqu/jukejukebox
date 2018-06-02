@@ -57,6 +57,7 @@ function pause_song(){
   document.getElementById('songID').pause();
 }
 
+for (var i = 0; i < 5; i++){
 var jukebox = new Jukebox();
 var song1 = new Song("change.mp3","Changes","A$AP Rocky","Testing","4:20","images/asap-rocky-testing.jpg");
 var song2 = new Song("boredom.mp3","Bordeom","Tyler, The Creator","Flower Boy","4:20","images/flowerboy.png");
@@ -70,3 +71,4 @@ jukebox.addSong(song3);
 jukebox.addSong(song4);
 jukebox.addSong(song5);
 jukebox.addSong(song6);
+}

@@ -93,8 +93,10 @@
 
 .playlist {
      display: flex;
-     flex-direction: column;
+     align-content:flex-start;
+     flex-direction: row;
      justify-content: flex-start;
+     flex-wrap:wrap;
      width: 40%;
      height: 100%;
      background: linear-gradient(lightskyblue , midnightblue);
@@ -108,25 +110,29 @@
      order: -2;
      background-color: navy;
      height: 8%;
+     width:100%;
 }
 
 .song {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-     background-color: darkslateblue;
-     height: 7%;
-     font-family: sans-serif;
-     font-weight: 150;
-     text-align: center;
-     color: white;
-     border-top: 1px solid black;
-     border-bottom: 1px solid black;
-     padding-right: 25px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkslateblue;
+  height: 7%;
+  font-family: sans-serif;
+  font-weight: 150;
+  text-align: center;
+  color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-right: 25px;
+  width:100%
 }
 
 .active-song {
+  width:100%;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
