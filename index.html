@@ -13,7 +13,7 @@
                <div class="song-artwork">
                     <img id="active-song-art-file" src="images/dancingdude.png"> </img>
                </div>
-               <div class="song-info">
+               <div "song-info">
                     <p id="active-song-title"> </p>
                     <div class="artist-album-joint">
                          <p id="active-song-artist"> </p>
@@ -28,6 +28,24 @@
                     <!--button class="play-bar-button" id="pause-play"><i class="fa fa-step-forward"></i></button-->
                     <!-- Pause button <i class="fa fa-pause"></i> -->
                </div>
+               <div class="song-info">
+                 Add a Song:
+                 <select id="song-select">
+                   <option value="boredom">Boredom - Tyler, The Creator</option>
+                   <option value="chanel">Chanel - Frank Ocean</option>
+                   <option value="dream">But A Dream - G-Eazy</option>
+                   <option value="perry">Perry Aye - A$AP Mob</option>
+                   <option value="noless">No Less - G-Eazy</option>
+                   <option value="commes">Commes des Garcons - Frank Ocean</option>
+                   <option value="nights">Nights - Frank Ocean</option>
+                   <option value="gina">Go Gina - SZA</option>
+                   <option value="everybody">Everybody Works - Jay Som</option>
+                   <option value="marcy">Marcy Me - JAY-Z</option>
+                 </select>
+                 <button id="submit-song" onclick="selectSong()"> Add to Jukebox </button>
+                 <br>
+
+               </div>
           </div>
           <div class="playlist-container">
                <div class="playlist-title-bar">
@@ -37,7 +55,7 @@
                     &ensp; select a song from below...
                </div>
                <div class="playlist">
-                    
+
                </div>
           </div>
      </div>

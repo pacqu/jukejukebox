@@ -55,26 +55,66 @@ function pause_song(){
   document.getElementById('songID').pause();
 }
 
+
 var jukebox = new Jukebox();
 var song1 = new Song("songs/change.mp3","Changes","A$AP Rocky","Testing","4:20","images/asap-rocky-testing.jpg");
-var song2 = new Song("songs/boredom.mp3","Boredom","Tyler, The Creator","Flower Boy","4:20","images/flowerboy.png");
-var song3 = new Song("songs/chanel.mp3","Chanel","Frank Ocean","Chanel","4:20","images/chanel.jpg");
-var song4 = new Song("songs/but-a-dream.mp3","But A Dream","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
-var song5 = new Song("songs/perry-aye.mp3","Perry Aye","A$AP Mob","Cozy Tapes Vol. 2", "4:20", "images/asap-mob-cozy2.jpg");
-var song6 = new Song("songs/no-less.mp3","No Less","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
-var song7 = new Song("songs/commes.m4a","Commes des Garcons","Frank Ocean","Endless","4:20","images/endless.jpg");
-var song8 = new Song("songs/nights.m4a","Nights","Frank Ocean","Blonde","4:20","images/blonde.jpg");
-var song9 = new Song("songs/gogina.mp3","Go Gina","SZA","CTRL","4:20","images/ctrl.jpg");
-var song10 = new Song("songs/everybody.mp3","Everybody Works","Jay Som","Everybody Works","4:20","images/everybody.jpg");
-var song11 = new Song("songs/marcy.mp3","Marcy Me","JAY-Z","4:44","4:20","images/444.png");
 jukebox.addSong(song1);
-jukebox.addSong(song2);
-jukebox.addSong(song3);
-jukebox.addSong(song4);
-jukebox.addSong(song5);
-jukebox.addSong(song6);
-jukebox.addSong(song7);
-jukebox.addSong(song8);
-jukebox.addSong(song9);
-jukebox.addSong(song10);
-jukebox.addSong(song11);
+function selectSong(){
+  switch (document.getElementById('song-select').value) {
+
+    case "boredom":
+    var song2 = new Song("songs/boredom.mp3","Boredom","Tyler, The Creator","Flower Boy","4:20","images/flowerboy.png");
+    jukebox.addSong(song2);
+    break;
+
+    case "chanel":
+    var song3 = new Song("songs/chanel.mp3","Chanel","Frank Ocean","Chanel","4:20","images/chanel.jpg");
+    jukebox.addSong(song3);
+    break;
+
+    case "dream":
+    var song4 = new Song("songs/but-a-dream.mp3","But A Dream","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
+    jukebox.addSong(song4);
+    break;
+
+    case "perry":
+    var song5 = new Song("songs/perry-aye.mp3","Perry Aye","A$AP Mob","Cozy Tapes Vol. 2", "4:20", "images/asap-mob-cozy2.jpg");
+    jukebox.addSong(song5);
+    break;
+
+    case "noless":
+    var song6 = new Song("songs/no-less.mp3","No Less","G-Eazy","The Beautiful and Damned","4:20","images/g-eazy-tbd.jpg");
+    jukebox.addSong(song6);
+    break;
+
+    case "commes":
+    var song7 = new Song("songs/commes.m4a","Commes des Garcons","Frank Ocean","Endless","4:20","images/endless.jpg");
+    jukebox.addSong(song7);
+    break;
+
+    case "nights":
+    var song8 = new Song("songs/nights.m4a","Nights","Frank Ocean","Blonde","4:20","images/blonde.jpg");
+    jukebox.addSong(song8);
+    break;
+
+    case "gina":
+    var song9 = new Song("songs/gogina.mp3","Go Gina","SZA","CTRL","4:20","images/ctrl.jpg");
+    jukebox.addSong(song9);
+    break;
+
+    case "everybody":
+    var song10 = new Song("songs/everybody.mp3","Everybody Works","Jay Som","Everybody Works","4:20","images/everybody.jpg");
+    jukebox.addSong(song10);
+    break;
+
+    case "marcy":
+    var song11 = new Song("songs/marcy.mp3","Marcy Me","JAY-Z","4:44","4:20","images/444.png");
+    console.log(song11);
+    jukebox.addSong(song11);
+    break;
+
+    default:
+    break;
+
+  };
+}

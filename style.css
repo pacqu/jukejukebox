@@ -159,3 +159,13 @@
      size: 18px;
      font-family: sans-serif;
 }
+
+#song-select{
+  margin:auto;
+  width: 30%;
+}
+
+#submit-song{
+  margin:auto;
+  width: 30%;
+}
