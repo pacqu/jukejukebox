@@ -17,6 +17,9 @@
      flex-direction: column;
      justify-content: center;
      text-align: center;
+     color: navy;
+     size: 18px;
+     font-family: sans-serif;
 }
 
 .artist-album-joint {
