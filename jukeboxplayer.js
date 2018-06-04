@@ -6,7 +6,6 @@ Updates:
 * song title
 * timing of song ? is this continious?
 * begins playing
-
 */
 
 
@@ -22,7 +21,6 @@ function changeSong(songIndex){
     deactivate.value = "song";
     document.querySelector('.active-song').setAttributeNode(deactivate);
   }
-
   var activate = document.createAttribute("class");
   activate.value = "active-song";
   document.querySelector('[style~=order:"'+ songIndex + '""]').setAttributeNode(activate);
